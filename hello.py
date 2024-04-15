@@ -13,3 +13,5 @@ if __name__ == "__main__":
     
     df = spark.createDataFrame(data_list).toDF("name", "age")
     df.show()
+
+    spark.stop()
