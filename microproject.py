@@ -26,7 +26,7 @@ if __name__ == "__main__":
     citiesDf.show()
     """
   
-    path = "/workspaces/Studying-Spark/nuek-vuh3.csv"
+    path = "/workspaces/Studying-Spark/data_scr/nuek-vuh3.csv"
 
     sc.addFile(path)
     df = spark.read.csv(path, header=True, inferSchema= True)
